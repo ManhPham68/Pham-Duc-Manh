@@ -10,6 +10,7 @@ int main()
 		m=n%10;
 		t=t*10+m;	
 	}
+
 	printf("So sau khi chuyen doi la: %d",t);
 	
 }
