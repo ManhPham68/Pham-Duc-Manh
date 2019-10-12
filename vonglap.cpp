@@ -11,7 +11,14 @@ int main()
 		scanf("%d",&b);
 		printf("\nNhap do dai canh thu ba :");
 		scanf("%d",&c);
-		if (a+b<=c||a+c<=b||b+c<=a) printf ("Nhap lai 3 canh :");
+		if( a+b>c && a+c>b && b+c>a) 
+		{
+		 printf ("\n^^Day la 3 canh cua 1 tam giac ^^");
+	    }
+		else
+		{
+		printf ("\nNhap lai 3 canh :");
+	    }
 		
 	}while(a+b<=c||a+c<=b||b+c<=a);
 }
