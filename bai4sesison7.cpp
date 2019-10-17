@@ -1,19 +1,23 @@
 #include<stdio.h>
 int main()
 {
-	int n,A[100];
+	int n,A[100] ,j=1,i;
 	printf ("Nhap so phan tu cua mang :");
 	scanf ("%d",&n);
 	for (int i=1;i<=n;i++)
     {
-		
-		do {
-			printf ("A[%d]=",i);
-	    	scanf ("%d",&A[i]);
-			
-		}while (A[i]==A[i-1]);
-		
-	}
+    	printf ("Arr[%d]=",i);
+    	scanf ("%d",&A[i]);
+    	for (int j=1;j<i;j++)
+    	{
+    		if (A[i]==A[j])
+    		{
+    			--i;
+    			break;
+			}
+		}
+    }
+
 	
 		
 	printf ("Mang sau khi nhap  :");
@@ -22,4 +26,4 @@ int main()
 		printf ("\t%d",A[i]);
 	
 	}	
-		}
+}
